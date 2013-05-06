@@ -18,8 +18,7 @@ usage()
   echo
   echo " Usage: make_gfsio_lib.sh [-g|-h] setup-file"
   echo
-  echo "   Script to iterate the configuration script over the set of precision"
-  echo "   versions of the library."
+  echo "   Script to build and install the library."
   echo
   echo '   The installation directory is ${PWD}'
   echo
