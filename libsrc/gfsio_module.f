@@ -1082,7 +1082,7 @@ contains
     integer(gfsio_intkind)      :: kf,k,kpds(200),kgds(200)
     logical*1,allocatable       :: lbms(:)
     integer(gfsio_intkind)      :: N=gfsio_kpds_intfill
-    integer(gfsio_intkind)      :: ios,i,w34
+    integer(gfsio_intkind)      :: ios,w34
 !------------------------------------------------------------
 ! set up grib meta 
 !------------------------------------------------------------
@@ -1136,7 +1136,7 @@ contains
     integer(gfsio_intkind)      :: kf,k,kpds(200),kgds(200)
     logical*1,allocatable       :: lbms(:)
     integer(gfsio_intkind)      :: N=gfsio_kpds_intfill
-    integer(gfsio_intkind)      :: ios,i
+    integer(gfsio_intkind)      :: ios
 !------------------------------------------------------------
 ! set up grib meta 
 !------------------------------------------------------------
@@ -1188,7 +1188,7 @@ contains
     integer(gfsio_intkind)      :: kf,k,kpds(200),kgds(200)
     logical*1,allocatable       :: lbms(:)
     integer(gfsio_intkind)      :: N=gfsio_kpds_intfill
-    integer(gfsio_intkind)      :: ios,i
+    integer(gfsio_intkind)      :: ios
 !------------------------------------------------------------
 ! set up grib meta 
 !------------------------------------------------------------
@@ -1239,7 +1239,7 @@ contains
     integer(gfsio_intkind)      :: kf,k,kpds(200),kgds(200)
     logical*1,allocatable       :: lbms(:)
     integer(gfsio_intkind)      :: N=gfsio_kpds_intfill
-    integer(gfsio_intkind)      :: ios,i,w34
+    integer(gfsio_intkind)      :: ios,w34
 !------------------------------------------------------------
 ! set up grib meta 
 !------------------------------------------------------------
@@ -1293,7 +1293,7 @@ contains
     integer(gfsio_intkind)      :: kf,k,kpds(200),kgds(200)
     logical*1,allocatable       :: lbms(:)
     integer(gfsio_intkind)      :: N=gfsio_kpds_intfill
-    integer(gfsio_intkind)      :: ios,i
+    integer(gfsio_intkind)      :: ios
 !------------------------------------------------------------
 ! set up grib meta 
 !------------------------------------------------------------
@@ -1347,7 +1347,7 @@ contains
     integer(gfsio_intkind)      :: kf,k,kpds(200),kgds(200)
     logical*1,allocatable       :: lbms(:)
     integer(gfsio_intkind)      :: N=gfsio_kpds_intfill
-    integer(gfsio_intkind)      :: ios,i
+    integer(gfsio_intkind)      :: ios
 !------------------------------------------------------------
 ! set up grib meta 
 !------------------------------------------------------------
@@ -1396,8 +1396,7 @@ contains
     integer(gfsio_intkind),optional,intent(in) :: idrt
     integer(gfsio_intkind),optional,intent(in) :: precision
     type(gfsio_grbmeta)         :: grbmeta
-    integer(gfsio_intkind)      :: N=gfsio_kpds_intfill
-    integer(gfsio_intkind)      :: nc,i
+    integer(gfsio_intkind)      :: i
     integer(gfsio_intkind)      :: ios,w34
     integer(gfsio_intkind)      :: kens(200),ibs,nbits
 !---
@@ -1465,8 +1464,7 @@ contains
     integer(gfsio_intkind),optional,intent(in) :: precision
     real(gfsio_dblekind)        :: data8(gfile%latb*gfile%lonb)
     type(gfsio_grbmeta)         :: grbmeta
-    integer(gfsio_intkind)      :: N=gfsio_kpds_intfill
-    integer(gfsio_intkind)      :: nc,i
+    integer(gfsio_intkind)      :: i
     integer(gfsio_intkind)      :: ios
     real(gfsio_intkind)         :: max
     integer(gfsio_intkind)      :: kens(200),ibs,nbits
@@ -1532,8 +1530,7 @@ contains
     integer(gfsio_intkind),optional,intent(in) :: idrt
     integer(gfsio_intkind),optional,intent(in) :: precision
     type(gfsio_grbmeta)         :: grbmeta
-    integer(gfsio_intkind)      :: N=gfsio_kpds_intfill
-    integer(gfsio_intkind)      :: nc,i
+    integer(gfsio_intkind)      :: i
     integer(gfsio_intkind)      :: ios
     integer(gfsio_intkind)      :: kens(200),ibs,nbits
 !---
@@ -1600,8 +1597,7 @@ contains
     integer(gfsio_intkind),optional,intent(in) :: idrt
     integer(gfsio_intkind),optional,intent(in) :: precision
     type(gfsio_grbmeta)         :: grbmeta
-    integer(gfsio_intkind)      :: N=gfsio_kpds_intfill
-    integer(gfsio_intkind)      :: nc,i
+    integer(gfsio_intkind)      :: i
     integer(gfsio_intkind)      :: ios,w34
     integer(gfsio_intkind)      :: kens(200),ibs,nbits
     real(gfsio_realkind)        :: max
@@ -1671,8 +1667,7 @@ contains
     integer(gfsio_intkind),optional,intent(in) :: precision
     real(gfsio_dblekind)        :: data8(gfile%latb*gfile%lonb)
     type(gfsio_grbmeta)         :: grbmeta
-    integer(gfsio_intkind)      :: N=gfsio_kpds_intfill
-    integer(gfsio_intkind)      :: nc,i
+    integer(gfsio_intkind)      :: i
     integer(gfsio_intkind)      :: ios
     integer(gfsio_intkind)      :: kens(200),ibs,nbits
     real(gfsio_realkind)        :: max
@@ -1741,8 +1736,7 @@ contains
     integer(gfsio_intkind),optional,intent(in) :: idrt
     integer(gfsio_intkind),optional,intent(in) :: precision
     type(gfsio_grbmeta)         :: grbmeta
-    integer(gfsio_intkind)      :: N=gfsio_kpds_intfill
-    integer(gfsio_intkind)      :: nc,i
+    integer(gfsio_intkind)      :: i
     integer(gfsio_intkind)      :: ios
     integer(gfsio_intkind)      :: kens(200),ibs,nbits
     real(gfsio_realkind)        :: max
@@ -1815,7 +1809,7 @@ contains
     integer(gfsio_intkind),optional,intent(in)  :: precision
     character(255) :: name,levtyp
     integer :: icen,igrid,iptv,itl,ibms,iftu,ip2,itr,ina,inm,ios
-    integer :: i,il1,il2,lev,krec,idrt_in
+    integer :: il1,il2,lev,krec,idrt_in
 !------------------------------------------------------------
 ! with record number, find record name, level type and level
 !------------------------------------------------------------
@@ -1909,7 +1903,6 @@ contains
     character*(*),intent(out)                   :: name,levtyp
     integer(gfsio_intkind),intent(out)          :: lev
     integer(gfsio_intkind),optional,intent(out) :: iret
-    integer :: ios
 ! - - - - - - - - - - - - - -  - - - - - - - -  - - - - - - - - - - - - - - - -
     if( present(iret)) iret=-6
     if ( jrec.gt.0 .or. jrec.le.gfile%nrec) then
@@ -1939,7 +1932,6 @@ contains
     integer,intent(out):: igrid,kgds(200)
     real(gfsio_dblekind) :: slat8(gfile%latb)
     real(gfsio_intkind) :: slat4(gfile%latb)
-    integer :: n
 ! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     iret=-5
     igrid=255
@@ -2001,9 +1993,8 @@ contains
     type(gfsio_gfile),intent(in)  :: gfile
     integer,intent(in):: iptv,icen,igrid,ibms,&
           iftu,ip2,itr,ina,inm,jrec,krec,lev
-   integer,intent(out):: kpds(200)
+    integer,intent(out):: kpds(200)
     integer(gfsio_intkind),intent(out)  :: iret
-   integer :: i
 ! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     iret=-5
     kpds(01)=icen
@@ -2535,11 +2526,11 @@ contains
       121.737742088, 124.879308913, 128.020877005, 131.162446275, &
       134.304016638, 137.445588020, 140.587160352, 143.728733573, &
       146.870307625, 150.011882457, 153.153458019, 156.295034268 /
-      REAL(8):: DLT,D1=1.
-      INTEGER(4):: JHE,JHO,J0=0
+      REAL(8):: DLT
+      INTEGER(4):: JHE,JHO
       real,PARAMETER :: PI=3.14159265358979,C=(1.-(2./PI)**2)*0.25
       real r
-      integer jh,js,n,j
+      integer jh,n,j
 !C - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 !C  GAUSSIAN LATITUDES
 !      print *,'gfsio_module,in SPLAT4',IDRT,JMAX
@@ -2644,11 +2635,11 @@ contains
       121.737742088, 124.879308913, 128.020877005, 131.162446275, &
       134.304016638, 137.445588020, 140.587160352, 143.728733573, &
       146.870307625, 150.011882457, 153.153458019, 156.295034268 /
-      REAL(8):: DLT,D1=1.
-      INTEGER(4):: JHE,JHO,J0=0
+      REAL(8):: DLT
+      INTEGER(4):: JHE,JHO
       real(gfsio_dblekind),PARAMETER :: PI=3.14159265358979,C=(1.-(2./PI)**2)*0.25
       real(gfsio_dblekind) r
-      integer jh,js,n,j
+      integer jh,n,j
 !C - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 !C  GAUSSIAN LATITUDES
       IF(IDRT.EQ.4) THEN
